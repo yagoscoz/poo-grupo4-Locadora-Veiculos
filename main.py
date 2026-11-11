@@ -1,7 +1,7 @@
-from locadora import Locadora
-from carro import Carro
-from moto import Moto
-from caminhao import Caminhao
+from Classes.locadora import Locadora
+from Classes.carro import Carro
+from Classes.moto import Moto
+from Classes.caminhao import Caminhao
 
 
 def ler_numero(texto, tipo=float):
@@ -56,3 +56,6 @@ def main():
             break
         else:
             print("Opção inválida.")
+
+if __name__ == "__main__":
+    main()
