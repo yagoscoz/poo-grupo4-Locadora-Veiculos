@@ -10,3 +10,22 @@ class Moto(Veiculo):
 @property
 def cilindradas(self):
     return self.__cilindradas
+
+
+@cilindradas.setter
+def cilindradas(self, valor):
+    if valor <= 0:
+        raise ValueError("As cilindradas devem ser maiores que zero.")
+    self.__cilindradas = valor
+
+
+def empinar(self):
+    return f"A {self.modelo} está empinando! (só no filme) "
+
+
+def calcular_tarifa(self, dias):
+    return self.diaria_base * 0.9 * dias
+
+
+def __str__(self):
+    return f"[Moto] {super().__str__()} | {self.__cilindradas} cc"
